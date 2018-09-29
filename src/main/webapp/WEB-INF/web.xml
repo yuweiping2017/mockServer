@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>mockServer</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>MockServer</servlet-name>
+		<servlet-class>com.mock.control.MockServer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MockServer</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<servlet-class>com.mock.control.UploadHandleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadJarHandleServlet</servlet-name>
+		<url-pattern>/UploadJarHandleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UploadJarHandleServlet</servlet-name>
+		<servlet-class>com.mock.control.UploadJarHandleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<url-pattern>/UploadHandleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetFileListServlet</servlet-name>
+		<servlet-class>com.mock.control.GetFileListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetFileListServlet</servlet-name>
+		<url-pattern>/GetFileListServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

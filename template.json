@@ -1,0 +1,47 @@
+{
+	"/login": [
+		{
+			"head": {
+				"http": 200
+			},
+			"body": {
+				"success": "true"
+			}
+			
+		},
+		{
+			"head": {
+				"http": 302
+			},
+			"body": {
+				"success": "exec(randomNum5)"
+			},
+			"matchRequest": {
+				
+			}
+		},
+		{
+			"head": {
+				"http": 200
+			},
+			"body": {
+				"success": "exec(randomStr5)"
+			},
+			"matchRequest": {
+				"name": "yu"
+			}
+		},
+		{
+			"head": {
+				"http": 200
+			},
+			"body": {
+				"success": "exec(com.abc.funcation(ss,dd))"
+			},
+			"match": {
+				"name": "yu"
+			}
+		}
+	]
+
+}
